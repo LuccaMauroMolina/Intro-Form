@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%);
+}
+
+button{
+    background-color: hsl(248, 32%, 49%);
+}
+
+.submit{
+    background-color: hsl(154, 59%, 51%);
+}
+
+/* cent-form: formulario de la section */
+
+.cent-form{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.alt{
+    height: 100vh;
+}
+
+.terms{
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: hsl(246, 25%, 77%);
+}
+
+.panel{
+    background-color: white;
+}
+
+.name,.last,.email,.pass{
+    border: 1.5px solid rgb(222, 222, 222);
+}
+
+.red-terms{
+    color: hsl(0, 100%, 74%) ;
+}
+
+.error{
+    
+}
+
+input::placeholder {
+    font-weight: 600;
+    }
+input:focus-visible {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: hsl(246, 25%, 77%);
+    }
+
+@media screen and (max-width: 1000px){
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+        display: block;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cent-form{
+        display: grid;
+        place-items: center;
+    }
+
+    .img-res{
+        display: none;
+    }
+}
+
+
+/*.form-label{
+    display: flex;
+    flex-direction:column ;
+}*/
+
+/*.intro{
+    position: absolute;
+}*/
